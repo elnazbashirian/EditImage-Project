@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #cfdde6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+.container {
+  background-color: #fff;
+  box-shadow: 3px 3px 10px gray;
+  width: 850px;
+  height: 490px;
+  padding-left: 35px;
+}
+.header {
+  margin-top: 21px;
+  margin-bottom: 12px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.main-boxes {
+  display: flex;
+}
+.edit-container {
+  height: 340px;
+  padding: 20px;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.edit-container .options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.filter-buttons {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 7px;
+  height: 40px;
+  outline: none;
+  color: #6c757d;
+}
+.filter-buttons {
+  width: 115px;
+}
+.filter-buttons:hover {
+  background: #efeded;
+}
+.range,
+.rotate {
+  margin: 22px 0px 15px 0;
+}
+.range-info {
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+input {
+  width: 100%;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 13px;
+  height: 40px;
+  font-size: 14px;
+  color: #6c757d;
+  cursor: pointer;
+}
+.works button {
+  padding: 11px 20px;
+  font-size: 14px;
+  margin-top: 14px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+.works {
+  display: flex;
+}
+.right {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.reset {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #6c757d;
+}
+.choose {
+  background: #6c757d;
+  border: 1px solid #6c757d;
+  color: #fff;
+}
+.save {
+  background: #5372f0;
+  border: 1px solid #5372f0;
+  color: #fff;
+}
+img {
+  max-width: 490px;
+  max-height: 335px;
+  width: 100%;
+  height: 100%;
+}
+.image {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  background-size: cover;
+}
+.icons:hover {
+  background: #efeded;
+}
+.reset:hover{
+  background: #6c757d;
+  color: #fff;
+}
+input[type="file"]{
+  display: none;
+}
+.filter button.select{
+  color: #fff;
+  border-color: #5372F0;
+  background: #5372F0;
+}
+/* ctx.translate(canvas.width / 2, canvas.height / 2);
+if (rotation !== 0) {
+  ctx.rotate((rotation * Math.PI) / 180);
+}
+ctx.scale(horizontal, vertical); */

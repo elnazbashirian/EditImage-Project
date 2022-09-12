@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Easy Image Editor</div>
+      <div class="main-boxes">
+        <div class="edit-container">
+          <div class="filter">
+            <label>Filters</label>
+            <div class="options buttons">
+              <button class="brightness filter-buttons select" id="brightness">Brightness</button>
+              <button class="saturation filter-buttons" id="saturation">Saturation</button>
+              <button class="inversion filter-buttons" id="inversion">Inversion</button>
+              <button class="grayscale filter-buttons" id="grayscale">Grayscale</button>
+            </div>
+
+            <div class="range">
+              <div class="range-info">
+                <span class="name">Brighteness</span>
+                <span class="number">100%</span>
+              </div>
+              <input type="range" value="100" min="0" max="200" id="range" />
+            </div>
+          </div>
+          <div class="rotate">
+            <label>Rotate & Flip</label>
+            <div class="options">
+              <button class="icons rotate-left" id="left">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+              <button class="icons rotate-right" id="right">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+              <button class="icons vertically" id="vertical">
+                <i class="bx bx-reflect-vertical"></i>
+              </button>
+              <button class="icons horizontaly" id="horizontal">
+                <i class="bx bx-reflect-horizontal"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="" alt="" id="output" />
+        </div>
+      </div>
+      <div class="works">
+        <button class="reset">Reset Filters</button>
+        <div class="right">
+          <input
+            type="file"
+            class="image-input"
+            accept="image/*"
+            name="image"
+            id="file"
+          />
+          <button class="choose">Choose Image</button>
+
+          <button class="save">Save Image</button>
+        </div>
+      </div>
+    </div>
+    <script src="new-script.js"></script>
+  </body>
+</html>
